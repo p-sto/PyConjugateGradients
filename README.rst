@@ -101,10 +101,10 @@ All test matrices will be symmetric (NxN dimensions).
     a_matrix = TestMatrices.get_random_test_matrix(matrix_size, pattern='q')
 
 
-How test matrices are generated obtained
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How test matrices are generated
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Matrix will be positively define if its eigenvalues are positive, to achieve this it is needed to generate ``Q`` matrix,
+Matrix will be positively defined if its eigenvalues are positive, to achieve this it is needed to generate ``Q`` matrix,
 which will contain random values. Positively defined testing ``A`` matrix is derived from equation ``A = Q'DQ``,
 where ``D`` is diagonal matrix (with positive elements on its diagonal).
 When ``A`` is calculated, set of matrix filter can be applied to achieve sparse distributed matrix with interesting shapes.
@@ -115,7 +115,7 @@ Matrices can be viewed using ``view_matrix`` function, which can be found in ``u
 .. code:: python
 
     from PyConjugateGradients.test_matrices import TestMatrices
-    from PyConjugateGradients.utils import a_matrix
+    from PyConjugateGradients.utils import view_matrix
 
 
     a_matrix = TestMatrices.get_random_test_matrix(matrix_size, pattern='q')
