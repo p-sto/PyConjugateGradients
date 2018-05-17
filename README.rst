@@ -107,10 +107,10 @@ How test matrices are generated
 Matrix will be positively defined if its eigenvalues are positive, to achieve this it is needed to generate ``Q`` matrix,
 which will contain random values. Positively defined testing ``A`` matrix is derived from equation ``A = Q'DQ``,
 where ``D`` is diagonal matrix (with positive elements on its diagonal).
-When ``A`` is calculated, set of matrix filter can be applied to achieve sparse distributed matrix with interesting shapes.
+When ``A`` is calculated, set of matrix filters can be applied to achieve sparse distributed matrix with interesting shapes.
 Patterns were named: quadratic, rectangle, curve, arrow, noise.
 
-Matrices can be viewed using ``view_matrix`` function, which can be found in ``utils.py``.
+Matrices can be viewed using ``view_matrix`` function which can be found in ``PyConjugateGradients.utils``.
 
 .. code:: python
 
@@ -155,5 +155,11 @@ Matrices examples
     :width: 200 px
     :scale: 50 %
 
-Examples can be found in ``scripts/ConjugateGradients/demo.py``
+Demo
+~~~~
+
+::
+
+    $ python PyConjugateGradients/demo.py
+
 Required Python 3.5+
